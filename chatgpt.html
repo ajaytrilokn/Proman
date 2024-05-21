@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <!-- <script src="script.js" defer></script> -->
+
+    <title>Sticky Header Example</title>
+<style>
+    body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.sticky-header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease-in-out;
+}
+main
+{
+    position: absolute;
+    top: 90px;
+    padding: 20px;
+    text-align: justify;
+    line-height: 30px;
+}
+h4::first-letter
+{
+    font-size: 5    0px;
+    color: coral;
+}
+
+h4::first-line
+{
+    font-size: 30px;
+    color: #333;
+}
+/* Style adjustments when scrolling down */
+.sticky-header.scrolled {
+    background-color: #555;
+}
+
+</style>
+</head>
+<body>
+    <header class="sticky-header">
+        <h1>Your Website Logo</h1>
+        <!-- Add other header elements as needed -->
+    </header>
+<main>
+   <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, qui debitis inventore aliquid iste quae officia quis harum quos amet quasi provident repellendus tenetur quaerat eaque consequatur culpa tempora reiciendis fuga totam! Quidem dolore, voluptas labore aspernatur veniam aperiam similique suscipit debitis molestiae quos reiciendis! Iure minima temporibus reprehenderit porro rem, quibusdam perspiciatis, ducimus pariatur illo animi adipisci quia tempora molestiae deleniti officiis vitae ad enim, dolorem dolor minus ipsa! Quia voluptatum temporibus, architecto et, distinctio magnam aspernatur nobis eius, magni fugit aliquam repudiandae veritatis itaque deleniti esse quisquam eligendi id aut. Eius ad laborum odit tempora totam atque animi, ab cumque ipsam consectetur, voluptate in nihil amet aut? Consectetur sit facilis expedita rerum deleniti modi adipisci ex iusto! Dolorem perspiciatis aspernatur quam deserunt eligendi exercitationem itaque dolor quo rerum culpa, voluptates quaerat placeat ipsum aperiam? Optio iste eos temporibus. Nemo, commodi? Ex animi fugiat quidem. Delectus nam atque assumenda, nemo voluptates quaerat aut, recusandae vitae aliquid explicabo sed corporis tenetur praesentium, ex cumque molestiae excepturi! Nemo dolore temporibus tempora, necessitatibus, fuga beatae deleniti hic placeat unde nulla quo eos ipsam blanditiis vitae? Porro quia unde sapiente? Harum ipsam assumenda pariatur, ratione obcaecati dignissimos, eveniet voluptatibus minima laudantium ducimus voluptate sint iure quia voluptatem? Ea illum explicabo quisquam praesentium similique? Aliquam soluta, accusamus illo qui fuga deserunt enim sit mollitia dolor quia atque et delectus aperiam aliquid excepturi alias ab! Et totam, aut aperiam vitae reprehenderit libero asperiores quaerat rem laborum magnam quam inventore odit sapiente quisquam error quod sequi veniam expedita nobis quidem alias? Optio, quaerat? Illo doloribus repudiandae architecto dolorem vitae nulla explicabo incidunt sequi porro nihil assumenda ullam voluptas ipsam non ea minus corrupti, quae, esse recusandae excepturi blanditiis! Facere corporis sequi pariatur quisquam sed assumenda provident vero modi dolores, doloribus nobis quidem rerum dolore deserunt fuga voluptatum aspernatur laboriosam repudiandae minima velit voluptatem omnis numquam dolorem. Voluptate voluptates quae alias, unde, deleniti nulla minima id veniam error tempora at, sapiente tenetur accusantium dicta hic atque? Dignissimos quisquam quas facilis officiis vitae sit neque ad maiores, cum iste amet sint culpa doloremque reprehenderit aut, impedit, a aliquam! Iure inventore deserunt quod in quos ullam nobis eos facere vero laboriosam minus, nostrum perferendis animi itaque ad magni eum deleniti, sapiente, quisquam repellat? Quia qui consequuntur ratione minima ad eveniet repellat eos. Exercitationem cupiditate fuga distinctio eaque cumque molestias excepturi, voluptates nemo alias sed. Accusamus sit ad cum, optio praesentium labore itaque perspiciatis provident dolorem, maxime eius rem nisi magni omnis doloribus! Ea rem animi necessitatibus placeat officia voluptatum dolor corporis ipsum totam accusamus illo sequi asperiores illum magni, a eum beatae tempore consequuntur perspiciatis consequatur eos qui blanditiis! Officia corrupti fugiat ex error tempora facilis recusandae dicta quae quo est vero soluta reprehenderit animi doloremque ea cum provident nam tempore, ipsa nemo dolor. Molestias voluptatem, iste sapiente quis impedit nobis harum aspernatur, dolorem, aperiam hic tenetur temporibus. Nemo consectetur numquam adipisci nisi explicabo fugiat, distinctio cupiditate accusamus veritatis quis, ab placeat repellat blanditiis et! Voluptatum inventore dolores eos!</h4>
+</main>
+    <!-- Rest of your website content goes here -->
+<script>
+    document.addEventListener('scroll', function () {
+    var header = document.querySelector('.sticky-header');
+    var scrollPosition = window.scrollY;
+
+    if (scrollPosition > 50) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+});
+
+</script>
+</body>
+</html>
